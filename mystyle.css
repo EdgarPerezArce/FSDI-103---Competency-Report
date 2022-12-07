@@ -1,0 +1,320 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100&display=swap");
+
+
+/*global*/
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Roboto', sans-serif;
+    
+}
+/*utilities*/
+@media(min-width: 768px) {
+    main {
+        width: 1200px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+body{
+    background-color: black;
+    color: white;
+
+}
+a{
+   color:white;
+   text-decoration: none;
+   
+}
+.img{
+    max-width: 100%;
+    
+}
+
+/*nav menu*/
+nav{
+    height:47px;
+    background-color: white;
+    display:flex;
+    justify-content: space-between;
+   
+
+}
+nav.menu{
+    display: flex;
+    justify-content: space-between;/*horizontally*/
+    align-items: center;/*vertically*/
+    background-color: white;
+    height: 35px;
+    padding: 8px 10px;
+
+}
+nav.menu a{
+    color:black;
+    margin: right 20px;
+}
+header{
+    margin: 20px;
+    text-align: center;
+}
+.header-div{
+    background-color: rgb(241, 211, 41);
+    padding: 2px;
+    width: 35px;
+    position: relative;
+    left: 50%;
+    margin-top: 30px;
+}
+.big{
+    font-size: 50px;
+}
+.small{
+    font-size: 17px;
+    
+}
+.sub-text{
+    text-align: center;
+    text-decoration: underline rgb(241, 211, 41) ;
+    color: white;
+    background-size: 100% 200%;
+    background-image:  linear-gradient(to bottom, black 50%, rgb(241,211,41) top 50%);
+    transition: .3s;
+}
+.sub-text:hover{
+    color:rgb(241, 211, 41);
+    background-color: rgb(241, 211, 41);
+    background-position: 0% 100%;
+    transition: top;
+    color: black;
+}
+.span{
+    border-bottom: rgb(241, 211, 41);
+}
+
+span a{
+    color: white;
+}
+
+.logo-frame{
+    height: 35px;
+    padding-left: 20px;
+    padding: 5px;
+    
+}
+.logo-complete{
+    display: none;
+    padding-top: 35px;
+    padding-left: 20px;
+}
+.link-login{
+    font-size:14px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: bold;
+    color:black;
+    padding-top: 5px;
+    
+    
+}
+.link-search{
+    color: black;
+    display: none;
+}
+.link-news{
+    display: none;
+}
+.link-subs{
+    margin-right: 30;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 700;
+    color: white !important;
+    background-color: black;
+    padding: 16px;
+    background: linear-gradient(to left, black 50%, rgb(241, 211, 41) 50%) right;
+    background-size: 200%;
+    transition: .2s ease-out;
+
+}
+.link-subs:hover{
+    color: black;
+    background-color: rgb(241, 211, 41);
+    background-position: left;
+}
+.header-div{
+    background-color:black;
+    padding: 2px;
+    width: 35px;
+    position: relative;
+    left: 50%;
+    margin-top: 30px;
+}
+.link-menu{
+    display: none;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    border-bottom: 2px solid rgb(241, 211, 41);
+}
+.link-arrows{
+   font-size: 20px;
+   text-transform: uppercase;
+   font-weight: bolder;
+   color: black;
+
+}
+h1{
+    font-size: 60px;
+    text-align: center;
+}
+p{
+    font-size: 30px;
+    text-align: center;
+    font-style: bold;
+}
+/*headers*/
+header{
+    height: 300px;
+}
+/*news*/
+@media (min-width:768px) {
+    main{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+.main-news-container,header,.secondary-news-container,.todays-picks-container{
+    margin-right: auto;
+    margin-left: auto;
+    width: 95%;
+}
+
+.main-news{
+    position: relative;/*parent*/
+    margin-top: -150px;
+}
+.main-news-img img{
+    width: 100%;
+    
+}
+.main-news-text{
+    position: absolute;
+    top: 325px;
+    left: 20px;
+}
+.main-news-text p{
+    font-size: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-block-end: 20px;
+
+}
+.main-news-text h2{
+    font-size: 14px;
+}
+.main-news-text a{
+    margin-top: -5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+/*seccondary-news*/
+.secondary-news{
+    width: 90%;
+    margin: 20px 0;
+}
+.secondary-news-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+
+}
+.secondary-news-img img{
+    width: 100%;
+}
+.secondary-news-text{
+    background-color: white;
+    margin-top: -23px;
+    padding: 30px;
+    
+}
+.secondary-news-text h2{
+    font-size: 12px;
+    text-transform: uppercase;
+    color: grey!important;
+    letter-spacing: 3px;
+
+}
+.secondary-news-text p{
+    text-align:justify;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-block-end: 20px;
+}
+.secondary-news-text a{
+    margin-top: -5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    color: black;
+    letter-spacing: 3px;
+    
+    
+}
+@media (min-width:768px) {
+    .secondary-news-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+@media (min-width:786px) {
+    .todays-picks{
+        height: 150px;
+        width: 150px;
+    }
+  }
+
+.todays-picks{
+ display: flex;
+ margin: 30px;
+}
+.today-picks-container{
+    display: flex;
+    align-items: center;
+    text-align: center;
+   
+}
+
+.todays-picks-img img{
+    width: 90px;
+    height: 90px;
+    margin-right: 2px;
+    max-width: 100%;
+}
+.todays-picks-text h2{
+    flex-basis: 0;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.todays-picks h3{
+    font-size: 40px;
+}
+.todays-picks-text p{
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+}
+
+
+
